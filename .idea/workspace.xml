@@ -3,11 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cf2ab97e-13f3-49a6-9d9b-6c8c8470099f" name="Default Changelist" comment="created DailyAdviceClient class">
       <changelist_data name="JHW" email="" />
+      <change afterPath="$PROJECT_DIR$/src/Ryan_Monica_Example/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ryan_Monica_Example/RyanMonicaJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThreadTest/MyRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThreadTest/RunThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThreadTest/TreadTester.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hello-spring/src/main/resources/static/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java-opentutorials/java-opentutorials.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java-practice01/java-practice01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleChat/SimpleChatClientA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleChat/SimpleChatClientA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Application.DailyAdviceClient">
+  <component name="RunManager" selected="Application.RyanMonicaJob">
     <configuration name="DailyAdviceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DailyAdvice.DailyAdviceClient" />
       <module name="chatting-app" />
@@ -77,6 +81,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadTest.RunThreads" />
+      <module name="chatting-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ThreadTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RyanMonicaJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ryan_Monica_Example.RyanMonicaJob" />
+      <module name="chatting-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ryan_Monica_Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreadTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadTest.TreadTester" />
+      <module name="chatting-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ThreadTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -90,6 +133,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RyanMonicaJob" />
+        <item itemvalue="Application.RunThreads" />
+        <item itemvalue="Application.TreadTester" />
         <item itemvalue="Application.DailyAdviceClient" />
         <item itemvalue="Application.DailyAdviceServer" />
       </list>
@@ -103,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622806198063</updated>
-      <workItem from="1622806200149" duration="6628000" />
+      <workItem from="1622806200149" duration="13004000" />
     </task>
     <servers />
   </component>
