@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cf2ab97e-13f3-49a6-9d9b-6c8c8470099f" name="Default Changelist" comment="created DailyAdviceClient class">
       <changelist_data name="JHW" email="" />
-      <change afterPath="$PROJECT_DIR$/src/DailyAdvice/DailyAdviceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DailyAdvice/DailyAdviceServer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hello-spring/src/main/resources/static/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java-opentutorials/java-opentutorials.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../java-practice01/java-practice01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622806198063</updated>
-      <workItem from="1622806200149" duration="2625000" />
+      <workItem from="1622806200149" duration="4022000" />
     </task>
     <servers />
   </component>
