@@ -89,9 +89,9 @@ public class SimpleChatClientA {
         public void run() {
             String message;
             try {
-                while((message = reader.readLine()) != null) {
+                while((message = reader.readLine()) != null) { // server에서 null이 아닌 것을 받을 때까지 계속 읽어온 값을 출력
                     System.out.println("read "+ message);
-                    incoming.append(message+"\n");
+                    incoming.append(message+"\n"); // 스크롤 텍스트 영역에 새 메시지 추가
                 }
             } catch (Exception ex) {ex.printStackTrace();}
         }
