@@ -6,15 +6,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class SimpleChatClientA {
+public class SimpleChatClient {
     JTextArea incoming;
     JTextField outgoing;
-    BufferedReader reader;
-    PrintWriter writer;
     Socket sock;
+    /* Writer & Reader -> "text" I/O에 사용. 다른 자료는 다른 input & output stream 써야 함 */
+    PrintWriter writer; // byte to char
+    BufferedReader reader; // client <- server(read from server)
 
-    public static void main(String[] args) {
-        new SimpleChatClientA().go();
+    private String clientName;
+
+    public SimpleChatClient(String clientName) {
+        this.clientName = clientName+": ";
     }
 
     public void go(){
@@ -40,29 +43,38 @@ public class SimpleChatClientA {
         mainPanel.add(sendButton);
 
         frame.getContentPane().add(BorderLayout.CENTER, mainPanel);
-        frame.setSize(400, 500);
-        frame.setVisible(true);
 
-        // setUpNetworking() 메소드를 호출
         setUpNetworking();
 
-        // thread 생성 & start
         Thread readerThread = new Thread(new IncomingReader());
         readerThread.start();
+
+        frame.setSize(650, 500);
+        frame.setVisible(true);
+
+        // 왜 아래 코드를 하면 안되는 건가...
+//        frame.getContentPane().add(BorderLayout.CENTER, mainPanel);
+//        frame.setSize(400, 500);
+//        frame.setVisible(true);
+//
+//        // setUpNetworking() 메소드를 호출
+//        setUpNetworking();
+//
+//        // thread 생성 & start
+//        Thread readerThread = new Thread(new IncomingReader());
+//        readerThread.start();
     }
 
-    // Socket과 PrintWriter를 만드는 함수
+    // 네트워크 연결. reader와 writer 정의
     private void setUpNetworking(){
         try {
             // Socket을 만듦
             sock = new Socket("127.0.0.1", 5000);
 
             InputStreamReader streamReader = new InputStreamReader(sock.getInputStream());
-            BufferedReader reader = new BufferedReader(streamReader);
+            reader = new BufferedReader(streamReader);
 
-            //  PrintWriter를 만듦고, 그 PrintWriter를 writer 인스턴스 변수에 대입
             writer = new PrintWriter(sock.getOutputStream());
-
             System.out.println("Networking ESTABLISHED");
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -74,9 +86,10 @@ public class SimpleChatClientA {
         public void actionPerformed(ActionEvent e) {
             try {
                 // 텍스트 필드로부터 텍스트를 알아낸 다음
-                writer.println(outgoing.getText());
+                String sendText = clientName+ ": " +outgoing.getText();
+                writer.println(sendText);
                 // writer(PrintWriter 객체)를 써서 서버로 보냄
-                writer.flush();
+                writer.flush(); // 남아있는 text가 없게 .flush()로 모든 내용이 출력되도록 함
             } catch(Exception ex) {
                 ex.printStackTrace();
             }
