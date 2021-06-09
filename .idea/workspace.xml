@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf2ab97e-13f3-49a6-9d9b-6c8c8470099f" name="Default Changelist" comment="left a few commets on SimpleChatClientA.java">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleChat/SimpleChatClients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleChat/SimpleChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello-spring/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-opentutorials/java-opentutorials.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-practice01/java-practice01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chatting-app/SimpleChat/SimpleChatClientA$SendButtonListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chatting-app/SimpleChat/SimpleChatClientA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chatting-app/SyncExample/TestSync.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chatting-app/SyncExample/TestSync.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chatting-app/ThreadTest/TreadTester.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleChat/SimpleChatClientA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleChat/SimpleChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreadTest/TreadTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreadTest/ThreadTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chatting-app/SimpleChat/SimpleChatServer$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chatting-app/SimpleChat/SimpleChatServer$ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chatting-app/SimpleChat/SimpleChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chatting-app/SimpleChat/SimpleChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleChat/SimpleChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleChat/SimpleChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -165,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622806198063</updated>
       <workItem from="1622806200149" duration="27793000" />
-      <workItem from="1623149917223" duration="13041000" />
+      <workItem from="1623149917223" duration="18584000" />
     </task>
     <task id="LOCAL-00001" summary="upgraded SimpleChatClientA.java">
       <created>1623130154780</created>

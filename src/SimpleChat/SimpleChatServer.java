@@ -29,6 +29,8 @@ public class SimpleChatServer {
                 PrintWriter writer = new PrintWriter(clientSocket.getOutputStream());
                 clientOutputStreams.add(writer);
 
+//                ClientHandler clientHandler = new ClientHandler(clientSocket);
+//                clientHandler.start();
                 Thread t  = new Thread(new ClientHandler(clientSocket));
                 t.start();
                 System.out.println("got a connection");
@@ -38,7 +40,9 @@ public class SimpleChatServer {
         }
     }
 
-    public class ClientHandler implements Runnable {
+
+//    public class ClientHandler extends Thread { // -> 다른 class 상속 불가
+    public class ClientHandler implements Runnable { // -> 다른 class 상속 가능. 다형성에 좋음
         BufferedReader reader;
         Socket sock;
 
@@ -58,9 +62,11 @@ public class SimpleChatServer {
         }
 
         public void run() {
+            // 이것도 나름의 Application layer protocol!
+            // 메세지, 이미지 등의 처리를 여기서 함
             String message;
             try {
-                while((message = reader.readLine()) != null) {
+                while((message = reader.readLine()) != null) { // PrintWriter가 넣어주는 줄바꿈 문자로 구분
                     System.out.println("read " + message);
                     tellEveryone(message);
                 }
